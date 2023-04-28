@@ -1,8 +1,21 @@
-body {
-    background-image: url(/images/PRINCIPAL.jpg);
-    background-position: center;
-    background-size: cover;
+
+
+.container-login{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  
+  
 }
+
+.border{
+  width: 30%;
+}
+
+.form-login{
+  width: 100%;
+}
+
 
 .container {
     display: flex;
