@@ -14,46 +14,25 @@
 </head>
 
 <body>
-    <!--
-    <header class="encabezado">
-        <div class="izquierda">
-            <div class="logo">
-                <img src="/images/Logo_cybersecurity.png" alt="Logo">
-            </div>
-            <div class="busqueda">
-                <input type="text" class="campo-busqueda" placeholder="Buscar...">
-                <button class="boton-busqueda">
-                    <img src="/images/lupa.png" alt="Buscar">
-                </button>
-            </div>
-        </div>
-        <div class="derecha">
-            <a href="" class="texto">INICIO</a>
-            <a class="texto">AMENAZAS</a>
-            <a class="texto">VIDEOS</a>
-            <a class="texto">MI CUENTA</a>
-        </div>
-    </header>
-    -->
-    
     <!-- NAV BAR INICIO-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="../html/index.html" style="width: 10%; margin-bottom: auto;">
-            
-            <img src="../images/main-logo.png" alt="texto alternativo de la imagen" style="width: 20%;">
+    <section id="nav-bar">    
+        <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="../html/index.html">
+            <img src="../images/main-logo.png" alt="texto alternativo de la imagen">
             Cybersafe
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Contenidos
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#">Documentación Legal</a>
                   <a class="dropdown-item" href="#">Normatividad</a>
                   <a class="dropdown-item" href="#">Cursos</a>
@@ -62,7 +41,7 @@
                   <a class="dropdown-item" href="#">Herramientas</a>
                   <a class="dropdown-item" href="#">Empresarial</a>
                   <a class="dropdown-item" href="#">Desarrollo</a>
-                </div>
+                </ul>
               </li>
             <li class="nav-item active">
               <a class="nav-link" href="../html/login.html">Ingreso</a>
@@ -73,62 +52,104 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                <!--<img src="images/buscar-nav.png" alt="texto alternativo de la imagen" style="height: auto;">-->
-                Busqueda
-            </button>
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Busqueda</button> 
           </form>
         </div>
       </nav>
-    <!-- NAV BAR END-->
-    <div class="container">
-        <img id="image-banner" src="../images/ia1.png" alt="texto alternativo de la imagen">
-    </div>
-    <div class="info1">
-        <p class="info">Somos una fuente de información y recursos valiosos para cualquier persona que busque
-            mantenerse segura en línea y proteger su información personal y profesional contra los
-            riesgos de seguridad cibernética
-        </p>
-    </div>
-
-    <hr>
-    <div id="cards-container">
-        <div class="card">
-            <a href="https://www.wikipedia.org/"><img class="tamaño" src="../images/ADVANCES_300_200.jpg"
-                    alt="texto alternativo de la imagen"></a>
-            <h2 class="alinear"><a class="subtitulos" href="https://www.wikipedia.org/">Avances </a></h2>
+    </section>
+    <!--Banner-->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="promo-title">¡APRENDE CON NOSOTROS!</p>
+                    <p>Somos una fuente de información y recursos valiosos para cualquier persona que busque
+                        mantenerse segura en línea y proteger su información personal y profesional contra los
+                        riesgos de seguridad cibernética</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="../images/Recurso1.png" class="img-fluid">
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <a href=""><img class="tamaño" src="../images/cybersecurity-news.jpg" 
-                alt="texto alternativo de la imagen"></a>
-            <h2 class="alinear"><a class="subtitulos" href="">Noticias </a></h2>
+        <img src="../images/wave1.png" class="bottom-img">
+    </section>    
+    <!--Servicios-->
+    <section id="services">
+        <div class="container-fluid">
+            <h1 class="text-center mt-5 display-3 fw-bold">Navegar</h1>
+            <hr class="mx-auto mb-5 w-25">            
+            <div class="row mb-5">
+                <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <div class="card shadow">
+                        <a href="https://www.wikipedia.org/" >
+                        <img src="../images/idea.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="text-center">Avances</h3>
+                            <hr class="mx-auto w-75">
+                            <p>
+                                Protege tu información personal y empresarial con los últimos avances en ciberseguridad. 
+                                Descubre cómo nuestra tecnología de vanguardia te permite navegar por la web con total seguridad,
+                                y estar protegido contra amenazas en línea. Mantente un paso adelante de los 
+                                ciberdelincuentes con nuestros servicios de seguridad digital avanzados.
+                            </p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <div class="card shadow">
+                        <a href="https://www.wikipedia.org/" >
+                        <img src="../images/newspaper.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="text-center">Noticias</h3>
+                            <hr class="mx-auto w-75">
+                            <p>
+                                ¡Mantente informado sobre las últimas noticias de ciberseguridad! 
+                                Descubre cómo las amenazas en línea están evolucionando y qué medidas puedes tomar para proteger tus datos personales y empresariales. 
+                                Nuestros expertos en ciberseguridad recopilan las noticias más importantes para mantenerte al día en este cambiante mundo digital.
+                            </p>
+                        </div>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <div class="card shadow">
+                        <a href="https://www.wikipedia.org/" >
+                        <img src="../images/reunion.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="text-center">Eventos</h3>
+                            <hr class="mx-auto w-75">
+                            <p>
+                                Descubre los últimos eventos y conferencias de ciberseguridad. Únete a expertos en ciberseguridad de todo el mundo para aprender sobre las últimas tendencias
+                                y soluciones para proteger tu información personal y empresarial. Mantente al día con las últimas tecnologías y estrategias de ciberseguridad para mantener tus datos seguros.
+                            </p>
+                        </div>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <div class="card shadow">
+                        <a href="https://www.wikipedia.org/" >
+                        <img src="../images/gavel.png" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="text-center">Regulaciones</h3>
+                            <hr class="mx-auto w-75">
+                            <p>
+                                Mantente al tanto de las últimas regulaciones de ciberseguridad. 
+                                Descubre cómo las leyes y regulaciones están evolucionando para proteger tus datos personales y empresariales en línea. 
+                                Nuestros expertos te mantienen informado sobre las últimas regulaciones y su impacto en la seguridad en línea.
+                            </p>
+                        </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
-        <div class="card">
-            <a href=""><img class="tamaño" src="../images/EVENTOS_300_200.jpg" 
-                alt="texto alternativo de la imagen"></a>
-            <h2 class="alinear"><a class="subtitulos" href="">Eventos </a></h2>
-        </div>
-        <div class="card">
-            <a href=""><img class="tamaño" src="../images/cybersecurity_laws-300x200.jpg" 
-                alt="texto alternativo de la imagen"></a>
-            <h2 class="alinear"><a class="subtitulos" href="">Regulaciones </a></h2>
-        </div>
-    </div>
-    <hr>
-    <div class="aliados">
-        <div class="texto-centrado">
-            <p>Politecnico</p>
-        </div>
-        <div class="texto-centrado">
-            <p>Eafit</p>
-        </div>
-        <div class="texto-centrado">
-            <p>Col Mayor</p>
-        </div>
-        <div class="texto-centrado">
-            <p>Pascual bravo</p>
-        </div>
-    </div>
+    </section>
     <hr>
     <footer class="footer">
         <div class="contenedor">
