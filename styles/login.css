@@ -1,4 +1,62 @@
 
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  color: inherit; 
+  text-decoration: inherit; 
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/*Estilos para el navbar*/
+#nav-bar{
+  position: sticky;
+  top:0;
+  z-index: 10;
+}
+
+.navbar{
+  background-image: linear-gradient(to right, #16283D,#556B75);
+  padding: 2%;
+}
+
+.navbar-brand{
+  color: #fff;
+}
+
+.navbar-brand img{
+  height: 80px;
+  padding-left: 20px;
+}
+
+.custom-toggler.navbar-toggler{
+  border-color: #fff;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-nav li{
+  padding: 0 10px;
+}
+
+.navbar-nav a{
+  color: #fff;
+  font-weight: 600;
+}
+
+.navbar-nav .dropdown-menu
+{ 
+  background-color: #16283d!important;
+}
+
 
 .container-login{
   display: flex;
@@ -66,7 +124,7 @@
     color: #007bff;
   }
   
-  .btn {
+  .btn-summit {
     padding: 10px;
     border-radius: 5px;
     border: none;
