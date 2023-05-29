@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Cybersafe Educa</title>
-    <link rel="stylesheet" href="../styles/register.css">
+    <link rel="stylesheet" href="../styles/kali.css">
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 </head>
 
@@ -55,39 +55,49 @@
       </div>
     </nav>
   </section>
-
-    <div class="container-login">
-        <div class="border">
-            <div class="form-login">
-                <form class="px-4 py-3">
-                <div class="form-group">
-                    <label for="exampleDropdownFormEmail1">Correo institucional</label>
-                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="correo@elpoli.edu.co">
-                </div>
-                <div class="form-group">
-                    <label for="exampleDropdownFormPassword1">Contraseña</label>
-                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
-                </div>
-                <div class="form-group">
-                    <label for="exampleDropdownFormPassword1">Confirmar Contraseña</label>
-                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Contraseña">
-                </div>
-                <div class="form-group">
-                    <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                    <label class="form-check-label" for="dropdownCheck">
-                        Recordar
-                    </label>
-                    </div>
-                </div>
-                <button type="submit" class="btn-summit btn-primary">Registrarse</button>
-                </form>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="../html/login.html">Ya tienes una cuenta? Ingresa</a>
-                <a class="dropdown-item" href="#">Olvidaste la contraseña? Restaurar</a>
-            </div>
+  
+  <section id="course">
+    <div class="container-course">
+      <div class="course-content">
+        <h1>¿Qué es Kali Linux?</h1>
+        <div class="video-container">
+          <!-- Inserta aquí el reproductor de video o el video que deseas mostrar -->
+          <!-- Ejemplo: -->
+          <video controls>
+            <source src="ruta_del_video.mp4" type="video/mp4">
+            Tu navegador no admite el elemento de video.
+          </video>
         </div>
+        <div class="module-info">
+        <p>Duración estimada: 1 sesión (2 horas)</p>
+        <h3>Introducción</h3>
+        <p>En este módulo, nos sumergiremos en el fascinante mundo de Kali Linux, una distribución de Linux especializada en seguridad informática y pruebas de penetración. 
+            Kali Linux se ha convertido en una herramienta fundamental para los profesionales y entusiastas de la seguridad,ya que ofrece una amplia gama de herramientas y 
+            recursos para llevar a cabo auditorías de seguridad, identificar vulnerabilidades y proteger sistemas.</p>
+        <h3>Objetivos</h3>
+        <p>Fases de reconocimiento en pruebas de penetración</p>
+            <li>Visión general de las fases típicas en una prueba de penetración.</li>
+            <li>Enfoque en la fase de recopilación de información y su importancia para las etapas posteriores.</li>
+        <p>Herramientas de recopilación de información</p>
+            <li>Descripción de las herramientas populares utilizadas en la recopilación de información, como Nmap, Recon-ng, TheHarvester, entre otras.</li>
+            <li>Uso de técnicas de búsqueda en fuentes públicas y pasivas para obtener información valiosa.</li>  
+        <p>Identificación de servicios y sistemas</p>
+        <li>Escaneo de puertos y descubrimiento de servicios activos en un objetivo.</li>  
+        <li>Utilización de herramientas de escaneo de puertos, como Nmap, para identificar puertos abiertos y servicios en ejecución.</li>  
+        <p> Escaneo de puertos y detección de vulnerabilidades</p>
+        <li>Interpretación de los resultados del escaneo de puertos y análisis de los servicios encontrados.</li>  
+        <li>Detección de vulnerabilidades conocidas en servicios específicos mediante el uso de bases de datos y herramientas de análisis.</li>  
+        <h3>Recursos adicionales</h3>
+        <li>Documentación oficial de Nmap: <a href="https://nmap.org/docs.html">https://nmap.org/docs.html</a></li>
+        <li>Recursos en línea recomendados para aprender más sobre técnicas de recopilación de información y escaneo de puertos.</li>
+        </div>
+      </div>
+      <div class="btn-container">
+        <a href="cambiar_modulo.php?modulo=anterior" class="btn btn-primary">&larr; Anterior</a>
+        <a href="cambiar_modulo.php?modulo=siguiente" class="btn btn-primary">Siguiente &rarr;</a>
+      </div>
     </div>
+</section>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
