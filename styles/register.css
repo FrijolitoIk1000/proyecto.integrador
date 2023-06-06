@@ -56,6 +56,17 @@ body {
   background-color: #16283d!important;
 }
 
+.nav-item{
+  color:white;
+}
+
+#ingreso,
+#registro{
+  color: white;
+  cursor: pointer;
+}
+
+
 
 .container-login{
   display: flex;

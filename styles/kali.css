@@ -22,7 +22,7 @@ html {
   
   .navbar{
     background-image: linear-gradient(to right, #16283D,#556B75);
-    padding: 0;
+    padding: 2%;
   }
   
   .navbar-brand{

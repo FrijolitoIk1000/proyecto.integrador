@@ -1,0 +1,243 @@
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a{
+    color: inherit; 
+    text-decoration: inherit; 
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  /*Estilos para el navbar*/
+  #nav-bar{
+    position: sticky;
+    top:0;
+    z-index: 10;
+  }
+  
+  .navbar{
+    background-image: linear-gradient(to right, #16283D,#556B75);
+    padding: 2%;
+  }
+  
+  .navbar-brand{
+    color: #fff;
+  }
+  
+  .navbar-brand img{
+    height: 80px;
+    padding-left: 20px;
+  }
+  
+  .custom-toggler.navbar-toggler{
+    border-color: #fff;
+  }
+  
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .navbar-nav li{
+    padding: 0 10px;
+  }
+  
+  .navbar-nav a{
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .navbar-nav .dropdown-menu
+  { 
+    background-color: #16283d!important;
+  }
+  
+  
+  .container-login{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    
+    
+  }
+  
+  .border{
+    width: 30%;
+  }
+  
+  .form-login{
+    width: 100%;
+  }
+  
+  
+  .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      
+    }
+    
+    .avatar {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      
+    }
+    
+    .fondo {
+      box-shadow: 0 0 40px #4134a8;
+      background-color: #fff;
+      padding: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-group {
+      margin-bottom: 10px;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    
+    .register-link {
+      text-decoration: none;
+      color: #007bff;
+    }
+    
+    .btn-summit {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      color: #fff;
+      background-color: #007bff;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background-color: #0069d9;
+    }
+  
+    
+    .wrapper{
+        max-width: 600px;
+        margin: 20px auto;
+    }
+    .content{
+        padding: 20px;
+        padding-bottom: 50px;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    a,span{
+        font-size: 15px;
+        font-weight: 600;
+        color: rgb(50, 141, 245);
+        padding-bottom: 30px;
+    }
+    p.text-muted{
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    
+    b{
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    .option{
+        display: block;
+        height: 50px;
+        background-color: #f4f4f4;
+        position: relative;
+        width: 100%;
+    }
+    .option:hover{
+        background-color: #e8e8e8;
+        cursor: pointer;
+    }
+    .option input{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .checkmark,.crossmark{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        height: 22px;
+        width: 22px;
+        background-color: #f4f4f4;
+        border-radius: 2px;
+        padding: 0;
+    }
+    .option:hover input ~ .checkmark,
+    .option:hover input ~ .crossmark{
+        background-color: #e8e8e8;
+    }
+    .option input:checked ~ .checkmark {
+        background-color: #79d70f;
+    }
+    .option input:checked ~ .crossmark {
+        background-color: #ec3838;
+    }
+    .checkmark:after,.crossmark:after {
+        content: "\2714";
+        position: absolute;
+        background-color: #79d70f;
+        display: none;
+        color: #fff;
+        padding-left: 4px;
+        width: 22px;
+        font-size: 16px;
+    }
+    .crossmark:after{
+        content: "\2715";
+        background-color: #ec3838;
+    }
+    .option input:checked ~ .checkmark:after,
+    .option input:checked ~ .crossmark:after {
+        display: block;
+        transition: 100ms ease-out 1s;
+      }
+    p.mb-4{
+        border-left: 3px solid green;
+    }
+    p.my-2{
+        border-left: 3px solid red;   
+    }
+    input[type="submit"]{
+        width: 100%;
+        height: 50px;
+        background-color: #229aeb;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover:focus{
+        border:none;
+        outline: none;
+        background-color: #229bebad;
+    }

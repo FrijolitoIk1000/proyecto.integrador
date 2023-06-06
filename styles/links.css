@@ -13,6 +13,12 @@ a{
 body {
   font-family: sans-serif;
 }
+#ingreso,
+#registro{
+  color: white;
+  cursor: pointer;
+}
+
 
 /*Estilos para el navbar*/
 #nav-bar{

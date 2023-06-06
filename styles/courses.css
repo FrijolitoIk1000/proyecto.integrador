@@ -8,6 +8,13 @@ html {
     color: inherit; 
     text-decoration: inherit; 
   }
+
+  #ingreso,
+  #registro{
+    color: white;
+    cursor: pointer;
+  }
+
   
   body {
     font-family: sans-serif;
@@ -96,11 +103,11 @@ html {
     box-shadow: 0 3px 7px 0 #a8a8a8;
   }
   .product-imitation {
-     text-align: center;
+    text-align: center;
     padding: 90px 0;
+    background-color: #f8f8f9;
     color: #bebec3;
     font-weight: 600;
-    position: relative;
   }
   .cart-product-imitation {
     text-align: center;
@@ -149,7 +156,10 @@ html {
     display: block;
     margin: 2px 0 5px 0;
   }
-
+  .product-name:hover,
+  .product-name:focus {
+    color: #1ab394;
+  }
   .product-price {
     font-size: 14px;
     font-weight: 600;
@@ -163,7 +173,6 @@ html {
   .product-detail .ibox-content {
     padding: 30px 30px 50px 30px;
   }
-
   .image-imitation {
     background-color: #f8f8f9;
     text-align: center;
@@ -172,18 +181,8 @@ html {
   .product-main-price small {
     font-size: 10px;
   }
-
   .product-images {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: 100%;
-    object-fit: contain;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    margin: 0 20px;
   }
   
   .ibox {
